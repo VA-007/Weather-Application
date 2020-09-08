@@ -1,6 +1,8 @@
+// Selecting the form elemensts using the queryselector
 const weatherForm = document.querySelector('form');
 const inputElement = document.querySelector('#input');
 
+// Adding an eventListener and printing to the web app
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
