@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express();
+const port = process.env.PORT || 3000;  //Providing a port to heroku to listen to. Locally use port 3000 and the other one if run on heroku.
 
 // --> Setting up a extensions array in options object to get the html type extensions for other html files such as about,weather,etc and also simplify routing and hence we need not write saperate app.get code for getting the respective pages in the browser.
 const options = {
@@ -126,6 +127,6 @@ app.get('*', (req, res) => {   // Here '*' is known as the wild card character a
 // <-------------------------------------------------------Old Code End------------------------------------------------------------>
 
 
-app.listen('3000', () => {
-  console.log('Server is up and running on port 3000');
+app.listen(port, () => {
+  console.log(`Server is up and running on port ${port}`);
 });
