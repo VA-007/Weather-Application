@@ -17,6 +17,7 @@ body {
 }
 
 .h-secondary {
+  margin: 1rem 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   text-align: center;
@@ -33,7 +34,7 @@ body {
 /* ----------- Images ----------- */
 #abtImg {
   height: 200px;
-  padding: 25px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
 #img404 {
   height: 200px;
