@@ -98,6 +98,9 @@ app.get('*', (req, res) => {   // Here '*' is known as the wild card character a
   });
 });
 
+app.listen(port, () => {
+  console.log(`Server is up and running on port ${port}`);
+});
 
 // <-------------------------------------------------------Old Code Start------------------------------------------------------------>
 // app.get('', (req, res) => {
@@ -126,7 +129,3 @@ app.get('*', (req, res) => {   // Here '*' is known as the wild card character a
 //  app.com/contact  -->   will be  -->  '/contact'
 // <-------------------------------------------------------Old Code End------------------------------------------------------------>
 
-
-app.listen(port, () => {
-  console.log(`Server is up and running on port ${port}`);
-});
